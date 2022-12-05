@@ -10,8 +10,9 @@ const Page = ({ data }) => {
             <div className="project" key={e.node_id}>
               <h3>{e.name}</h3>
               <p>{e.description}</p>
-              <p> {e.stargazers_count}</p>
-              <p> {e.forks}</p>
+              <a href={e.svn_url}>link to project</a>
+              <p> stars : {e.stargazers_count}</p>
+              <p> forks : {e.forks}</p>
               <p>{e.language}</p>
             </div>
           );
